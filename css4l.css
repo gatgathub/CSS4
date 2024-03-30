@@ -1,14 +1,6 @@
 /* Extra Stuff */
 [data-css4-version]::after {
-    content: " v2.0.0.1-lite";
-}
-
-html[data-css4-mode="css4_legacy"] [data-css4-compat] {
-    content: "WARNING: You are using a lite edition but are trying to use a full edition only feature!";
-}
-
-html[data-css4-legacy-disable] [data-css4-compat] {
-    content: "WARNING: You are using a lite edition but are trying to use a full edition only feature!";
+    content: " v1.2.0.1-lite";
 }
 /* Rules */
 [data-css4~="underline"] {
@@ -111,12 +103,8 @@ html[data-css4-legacy-disable] [data-css4-compat] {
     font-size: 30px;
 }
 
-[data-css4~="width:xxxsmall"] {
-    width: 15px;
-}
-
 [data-css4~="width:xxsmall"] {
-    width: 30px;
+    width: 15px;
 }
 
 [data-css4~="width:xsmall"] {
@@ -143,12 +131,8 @@ html[data-css4-legacy-disable] [data-css4-compat] {
     width: 100%;
 }
 
-[data-css4~="height:xxxsmall"] {
-    height:15px;
-}
-
 [data-css4~="height:xxsmall"] {
-    height:30px;
+    height:15px;
 }
 
 [data-css4~="height:xsmall"] {
@@ -351,7 +335,7 @@ html[data-css4-legacy-disable] [data-css4-compat] {
     position: sticky;
 }
 
-html[data-css4-mode="ie_mode"] [data-css4~="position-mode:sticky"] {
+[data-css4~="position-mode:sticky"][data-css4-mode="ie_mode"] {
     position: fixed;
 }
 
@@ -710,8 +694,4 @@ html[data-css4-mode="ie_mode"] [data-css4~="position-mode:sticky"] {
 
 [data-css4~="resizeable"] {
     resize: both;
-}
-
-[data-css4~="noline"] {
-    text-decoration: none;
 }
